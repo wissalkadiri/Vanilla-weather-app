@@ -78,7 +78,10 @@ ul li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     font-weight:500;
-    text-transform: capitalize;
+  
+}
+li::first-letter{
+      text-transform: capitalize;
 }
 #sunIcon{
     top: 30px;
