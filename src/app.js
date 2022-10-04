@@ -47,6 +47,8 @@ function handleSubmit(event){
     let cityInputElement =document.querySelector("#city-input")
     search(cityInputElement.value)
 }
+function fahrenheitLink(event){
+    event.preventDefault();
     let temperatureElement =document.querySelector("#temperature")
     celsiusElement.classList.remove("active");
     fahrenheitElement.classList.add("active")
