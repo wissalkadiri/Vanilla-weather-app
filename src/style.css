@@ -1,6 +1,4 @@
-img{
-    width: 20px;
-}
+
 
     .container{
 max-width:  288px;
@@ -15,7 +13,7 @@ padding: 20px 20px;
     top: 0px;
     margin: 50 auto;
     width:935px;
-    height: 354px;
+    height: 465px;
     background: rgba(222, 207, 194, 0.4);
     border: solid 1px rgba(222, 207, 194, 0.4);
     box-shadow: 13px 2px 18px #AC937D;
@@ -24,7 +22,7 @@ padding: 20px 20px;
 #background{
     position: absolute;
     width:935px;
-    height: 354px;
+    height: 465px;
     z-index: -5;
     border-radius: 22px;
     padding-top: 50;
@@ -112,8 +110,26 @@ li::first-letter{
     text-decoration: none ;
 }
 
-
-
+.weather-forecast{
+    position: relative;
+    top:70px;
+    left:50px;
+    text-align: center;
+}
+.weather-forecast-date{
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.6;
+}
+.weather-forcast-temperature-min{
+    opacity: 0.8;
+}
+.weather-forcast-temperature{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+}
 .active:hover{
     text-decoration: none ;
     color: black;
