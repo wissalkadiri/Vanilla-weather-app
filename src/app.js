@@ -100,30 +100,7 @@ function handleSubmit(event){
     let cityInputElement =document.querySelector("#city-input")
     search(cityInputElement.value)
 }
-function fahrenheitLink(event){
-    event.preventDefault();
-    let temperatureElement =document.querySelector("#temperature")
-    celsiusElement.classList.remove("active");
-    fahrenheitElement.classList.add("active")
-    let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32 ;
-    temperatureElement.innerHTML=Math.round(fahrenheitTemperature)
-}
-function celsiusLink(event){
-    celsiusElement.classList.add("active")
-    fahrenheitElement.classList.remove("active")
-    event.preventDefault();
-    let temperatureElement =document.querySelector("#temperature")
-    temperatureElement.innerHTML=Math.round(celsiusTemperature);
-}
-
-
-let celsiusTemperature =null;
-
-
 let form =document.querySelector("#searchBtn");
 form.addEventListener("click",handleSubmit);
-let fahrenheitElement = document.querySelector("#fahrenheit");
-fahrenheitElement.addEventListener("click",fahrenheitLink);
-let celsiusElement = document.querySelector("#celsius");
-celsiusElement.addEventListener("click",celsiusLink);
+
 search("Mohammedia")
