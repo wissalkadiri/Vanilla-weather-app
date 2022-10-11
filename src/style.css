@@ -113,7 +113,7 @@ li::first-letter{
 .weather-forecast{
     position: relative;
     top:70px;
-    left:50px;
+    left:7px;
     text-align: center;
 }
 .weather-forecast-date{
